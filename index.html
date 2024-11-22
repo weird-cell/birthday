@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy birthday nkem</title>
+    <title>Responsive Website with Images Containing Text</title>
 
     <style>
+         #audio-container {
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10; /* Ensure it's above the gallery content */
+        }
+
+        #background-music {
+            width: 50px; /* Adjust size as desired */
+            height: 50px; /* Adjust size as desired */
+            cursor: pointer;
+            
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4); /* Stylish gradient */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        #background-music::-webkit-media-controls-play-button,
+        #background-music::-webkit-media-controls-pause-button {
+            color: black;
+        }
         /* CSS for fading text and image overlay */
         .gallery {
             position: relative;
@@ -36,7 +58,7 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.2); /* Dark overlay with 50% opacity */
-            z-index: 1; /* Ensure it sits above the image but below the text */
+            z-index: 1; 
 }
 
         .birthday{
@@ -44,13 +66,16 @@
         }
         .overlay-text {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
             color: white;
             z-index: 2;
         }
+        #background-music { width: 300px; /* Adjust the width as needed */ }
+
+       
 
         @keyframes fadeInOut {
             0%, 95% { opacity: 0; }
@@ -86,16 +111,20 @@
 </head>
 <body>
    
+  
     
     <!-- Main Content -->
     <div class="content">
-         <audio controls id="background-music" autoplay loop>
-        <source src="music.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+        <div id="audio-container">
+            <audio controls id="background-music" autoplay loop>
+                <source src="music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
         <!-- Image Gallery with Text Overlay -->
             <!-- Image Containers for 24 Images -->
             <div class="gallery">
+                
                 
                 <!-- Image 1 -->
                 <div class="image-container">
