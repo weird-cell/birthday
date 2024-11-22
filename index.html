@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website with Images Containing Text</title>
+
+    <style>
+        /* CSS for fading text and image overlay */
+        .gallery {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            animation: fadeInOut 240s infinite;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2); /* Dark overlay with 50% opacity */
+            z-index: 1; /* Ensure it sits above the image but below the text */
+}
+
+        .birthday{
+            font-family: 'Cursive', 'Comic Sans MS', sans-serif;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+
+        @keyframes fadeInOut {
+            0%, 95% { opacity: 0; }
+            5%, 90% { opacity: 1; }
+        }
+
+        /* Assign animation delays to each image container */
+        .image-container:nth-child(1) { animation-delay: 0s; }
+        .image-container:nth-child(2) { animation-delay: 10s; }
+        .image-container:nth-child(3) { animation-delay: 20s; }
+        .image-container:nth-child(4) { animation-delay: 30s; }
+        .image-container:nth-child(5) { animation-delay: 40s; }
+        .image-container:nth-child(6) { animation-delay: 50s; }
+        .image-container:nth-child(7) { animation-delay: 60s; }
+        .image-container:nth-child(8) { animation-delay: 70s; }
+        .image-container:nth-child(9) { animation-delay: 80s; }
+        .image-container:nth-child(10) { animation-delay: 90s; }
+        .image-container:nth-child(11) { animation-delay: 100s; }
+        .image-container:nth-child(12) { animation-delay: 110s; }
+        .image-container:nth-child(13) { animation-delay: 120s; }
+        .image-container:nth-child(14) { animation-delay: 130s; }
+        .image-container:nth-child(15) { animation-delay: 140s; }
+        .image-container:nth-child(16) { animation-delay: 150s; }
+        .image-container:nth-child(17) { animation-delay: 160s; }
+        .image-container:nth-child(18) { animation-delay: 170s; }
+        .image-container:nth-child(19) { animation-delay: 180s; }
+        .image-container:nth-child(20) { animation-delay: 190s; }
+        .image-container:nth-child(21) { animation-delay: 200s; }
+        .image-container:nth-child(22) { animation-delay: 210s; }
+        .image-container:nth-child(23) { animation-delay: 220s; }
+        .image-container:nth-child(24) { animation-delay: 230s; }
+    </style>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Image Gallery with Text Overlay -->
+            <!-- Image Containers for 24 Images -->
+            <div class="gallery">
+                
+                <!-- Image 1 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/1.jpg" alt="Gallery Image 1">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        <h6>Some of the things i love about you</h6>
+                        <p>Your unwavering kindness makes every day brighter for everyone around you.</p>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/2.jpg" alt="Gallery Image 2">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                      
+                        <p>You fight for what you believe in with both passion and grace.</p>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/3.jpg" alt="Gallery Image 3">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                
+                        <p>You always make time to listen and truly understand those around you.</p>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/4.jpg" alt="Gallery Image 4">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                       
+                        <p>Your warm hugs are the comfort of home wherever you go.</p>
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/5.jpg" alt="Gallery Image 5">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        <p>You light up a room with your laughter and make everything better.</p>
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/6.jpg" alt="Gallery Image 6">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+              
+                        <p>Every day, you inspire me to be a better person, just by being yourself.</p>
+                    </div>
+                </div>
+                <!-- Image 7 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/7.jpg" alt="Gallery Image 7">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>Your generosity and selflessness make the world a kinder place.</p>
+                    </div>
+                </div>
+                <!-- Image 8 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/8.jpg" alt="Gallery Image 8">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                     
+                        <p>You stand strong and unshaken, even in the face of life's challenges.</p>
+                    </div>
+                </div>
+                <!-- Image 9 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/9.jpg" alt="Gallery Image 9">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                       
+                        <p>You remind us to celebrate the little joys in life that make it beautiful.</p>
+                    </div>
+                </div>
+                <!-- Image 10 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/10.jpg" alt="Gallery Image 10">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                      
+                        <p>Your ability to make everyone feel special is one of your greatest gifts.</p>
+                    </div>
+                </div>
+                <!-- Image 11 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/11.jpg" alt="Gallery Image 11">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>Your smile is like sunshine, brightening the darkest of days.</p>
+                    </div>
+                </div>
+                <!-- Image 12 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/12.jpg" alt="Gallery Image 12">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                       
+                        <p>You always stand up for what is right, no matter the difficulty.</p>
+                    </div>
+                </div>
+                <!-- Image 13 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/13.jpg" alt="Gallery Image 13">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>Your heart is beautiful, caring deeply for both people and the planet.</p>
+                    </div>
+                </div>
+                <!-- Image 14 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/14.jpg" alt="Gallery Image 14">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>You always find the good in others, even when it is hard to see.</p>
+                    </div>
+                </div>
+                <!-- Image 15 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/15.jpg" alt="Gallery Image 15">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>Your creativity and insight turn problems into opportunities.</p>
+                    </div>
+                </div>
+                <!-- Image 16 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/16.jpg" alt="Gallery Image 16">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                     
+                        <p>You balance strength and compassion in a way that leaves everyone in awe.</p>
+                    </div>
+                </div>
+                <!-- Image 17 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/17.jpg" alt="Gallery Image 17">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>Your resilience shines through, no matter how tough the journey.</p>
+                    </div>
+                </div>
+                <!-- Image 18 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/18.jpg" alt="Gallery Image 18">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                       
+                        <p>You make activism inspiring, reminding us all that change is possible.</p>
+                    </div>
+                </div>
+                <!-- Image 19 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/19.jpg" alt="Gallery Image 19">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>Your thoughtful words lift others up and bring comfort in difficult times.
+                            When you see something wrong, you take action—never just talk.
+                        </p>
+                    </div>
+                </div>
+                <!-- Image 20 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/20.jpg" alt="Gallery Image 20">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                     
+                        <p>You celebrate other people successes as if they are your own, with pure joy.</p>
+                    </div>
+                </div>
+                <!-- Image 21 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/21.jpg" alt="Gallery Image 21">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                        
+                        <p>May we continue to go on more adventures together, sharing our dreams and laughter. </p>
+                    </div>
+                </div>
+                <!-- Image 22 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/22.jpg" alt="Gallery Image 22">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                      
+                        <p>May your day be perfect in every way. You deserve all the good things in life.</p>
+                    </div>
+                </div>
+                <!-- Image 23 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/23.jpg" alt="Gallery Image 23">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                       
+                        <p>Know that you are always loved, cherished, and adored. Happy birthday, my heart!</p>
+                    </div>
+                </div>
+                <!-- Image 24 -->
+                <div class="image-container">
+                    <div class="overlay"></div>
+                    <img src="img/24.jpg" alt="Gallery Image 24">
+                    <div class="overlay-text">
+                        <h1 class="birthday">Happy Birthday Nkem</h1>
+                     
+                        <p>Here's to new beginnings and a year filled with endless blessings. Happy birthday!</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+</body>
+</html>
